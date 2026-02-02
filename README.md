@@ -112,14 +112,7 @@ The app can be deployed to any static hosting service:
 - **Netlify**: Connect your GitHub repository
 - **GitHub Pages**: Run `npm run build` and push the `build` folder
 
-##  License
-
-This project is open source and available under the MIT License.
-
 ##  Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests to improve the project.
 
-##  Support
-
-For questions or issues, please open an issue on the repository or contact the maintainers.
