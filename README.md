@@ -1,46 +1,125 @@
-# Getting Started with Create React App
+#  Anime Image Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application built with React and TypeScript that generates stunning anime-style character images using AI. Create beautiful anime artwork with various artistic styles and custom prompts.
 
-## Available Scripts
+##  Features
 
-In the project directory, you can run:
+- **Multiple Art Styles**: Generate anime images in 8 different artistic styles:
+  - Classic Anime
+  - Semi-Realistic
+  - Chibi
+  - Sketch
+  - Watercolor
+  - Digital Art
+  - Vintage Anime (90s aesthetic)
+  - Minimalist
 
-### `npm start`
+- **Custom Prompts**: Write your own prompts to customize character generation
+- **Real-time Generation**: Get AI-generated anime images instantly
+- **Download Images**: Save generated images directly to your device
+- **Responsive UI**: Beautiful, intuitive interface built with modern React
+- **TypeScript Support**: Full type safety for a robust codebase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##  Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (v14 or higher)
+- npm or yarn
+- Stability AI API key ([Get one here](https://platform.stability.ai/))
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+``ash
+git clone <repository-url>
+cd anime-image-generator
+``
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+``ash
+npm install
+``
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a .env file in the root directory and add your API key:
+``env
+REACT_APP_STABILITY_API_KEY=your_api_key_here
+``
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Available Scripts
 
-### `npm run eject`
+#### `npm start`
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload when you make changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### `npm run build`
+Builds the app for production in the `build` folder. The build is optimized and ready for deployment.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `npm test`
+Launches the test runner in interactive watch mode.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##  Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+``
+anime-image-generator/
+ src/
+    components/
+       AnimeImageGenerator.tsx    # Main component for image generation
+    App.tsx                        # Root component
+    index.tsx                      # Entry point
+    style.css                      # Global styles
+ public/
+    index.html
+    manifest.json
+    robots.txt
+ package.json
+ tsconfig.json
+ README.md
+``
 
-## Learn More
+##  Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React 19**: Modern UI library with hooks and concurrent features
+- **TypeScript**: Type-safe JavaScript for better development experience
+- **Lucide React**: Beautiful icon library
+- **Stability AI API**: AI-powered image generation
+- **Create React App**: Zero-configuration setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  How to Use
+
+1. Start the development server: `npm start`
+2. Select an art style from the available options
+3. (Optional) Enter a custom prompt for more specific character descriptions
+4. Click "Generate Image" to create your anime artwork
+5. Download the generated image using the download button
+
+##  Environment Variables
+
+- `REACT_APP_STABILITY_API_KEY`: Your Stability AI API key (required)
+
+##  Dependencies
+
+- `react` - UI library
+- `react-dom` - DOM rendering
+- `typescript` - Type safety
+- `lucide-react` - Icons
+- `react-scripts` - Build tooling
+
+##  Deployment
+
+The app can be deployed to any static hosting service:
+
+- **Vercel**: `vercel deploy`
+- **Netlify**: Connect your GitHub repository
+- **GitHub Pages**: Run `npm run build` and push the `build` folder
+
+##  License
+
+This project is open source and available under the MIT License.
+
+##  Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests to improve the project.
+
+##  Support
+
+For questions or issues, please open an issue on the repository or contact the maintainers.
